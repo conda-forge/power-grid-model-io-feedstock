@@ -1,5 +1,5 @@
 {% set name = "power-grid-model-io" %}
-{% set version = "1.2.47" %}
+{% set version = "1.2.49" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/power-grid-model-io-{{ version }}.tar.gz
-  sha256: f9013c16508c85aa2f4421cec260519e6bed638a9b742da5501f5f0783664006
+  sha256: 5ef9fa549dbcc309971ca2f27e5d06a5e90c11777d5937f83d5fc003fafc16d7
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - numpy >=1.20
     - openpyxl
     - pandas
-    - power-grid-model ~= 1.5.0
+    - power-grid-model >=1.6
     - pyyaml
     - structlog
     - tqdm
