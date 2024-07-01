@@ -46,6 +46,7 @@ test:
     - pytest-cov
     - pydantic
     - pandapower >=2.13.1
+    - numpy >=1.20, <2.0.0
 
 about:
   home: https://lfenergy.org/projects/power-grid-model/
