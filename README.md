@@ -148,6 +148,7 @@ Feedstock Maintainers
 =====================
 
 * [@TonyXiang8787](https://github.com/TonyXiang8787/)
+* [@figueroa1395](https://github.com/figueroa1395/)
 * [@mgovers](https://github.com/mgovers/)
 * [@nitbharambe](https://github.com/nitbharambe/)
 * [@petersalemink95](https://github.com/petersalemink95/)
