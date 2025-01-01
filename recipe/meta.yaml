@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "power-grid-model-io" %}
 {% set version = "1.2.109" %}
 
@@ -12,16 +13,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
-    - python 3.10
+    - python {{ python_min }}
     - setuptools
     - wheel
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.20
     - openpyxl
     - pandas
@@ -47,6 +48,7 @@ test:
     - pydantic
     - pandapower >=2.13.1
     - numpy >=1.20, <2.0.0
+    - python {{ python_min }}
 
 about:
   home: https://lfenergy.org/projects/power-grid-model/
