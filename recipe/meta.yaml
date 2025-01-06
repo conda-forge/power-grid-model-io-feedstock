@@ -1,5 +1,6 @@
+{% set python_min = '3.10' %}
 {% set name = "power-grid-model-io" %}
-{% set version = "1.2.109" %}
+{% set version = "1.2.111" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +8,21 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7eec72cf9205899f28719ef0452f7184e07a2816ffb6ec2cc03bdbf84f11059d
+  sha256: 0ca21693ec8cea6c740a35eb2f8822b9ecfd8223b788339234966397ca141e8a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
-    - python 3.10
+    - python {{ python_min }}
     - setuptools
     - wheel
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.20
     - openpyxl
     - pandas
@@ -45,8 +46,10 @@ test:
     - pytest
     - pytest-cov
     - pydantic
+    - scipy <1.14
     - pandapower >=2.13.1
     - numpy >=1.20, <2.0.0
+    - python {{ python_min }}
 
 about:
   home: https://lfenergy.org/projects/power-grid-model/
