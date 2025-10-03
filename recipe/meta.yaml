@@ -47,7 +47,7 @@ test:
     - pytest-cov
     - pydantic
     - scipy
-    - pandapower >=2.13.1
+    - pandapower >=3.0
     - numpy >=2.0.0
     - python {{ python_min }}
 
