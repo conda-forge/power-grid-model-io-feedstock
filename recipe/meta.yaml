@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "power-grid-model-io" %}
 {% set version = "1.3.39" %}
 
