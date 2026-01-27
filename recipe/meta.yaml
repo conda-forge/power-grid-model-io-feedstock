@@ -49,6 +49,7 @@ test:
     - scipy
     - pandapower >=3.0
     - numpy >=2.0.0
+    - packaging >=25.0
     - python {{ python_min }}
 
 about:
