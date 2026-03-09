@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "power-grid-model-io" %}
-{% set version = "1.3.54" %}
+{% set version = "1.3.55" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 49a3cecb863e61cdf9eea24171952b52671589334dae799e751076d6b52b664e
+  sha256: 562d96f05c581a2af4077e4b3c8ebd33fd983cc9325dcf3a16a2afd15bdc62d2
 
 build:
   noarch: python
