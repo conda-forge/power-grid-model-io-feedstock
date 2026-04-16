@@ -50,6 +50,7 @@ test:
     - pandapower >=3.0
     - numpy >=2.0.0
     - packaging ~=25.0  # pandapower does not support packaging>=26 as of pandapower==3.2.1
+    - deepdiff ~=8.6 # pandapower=3.2.1 has deepdiff~=8.6
     - python {{ python_min }}
 
 about:
